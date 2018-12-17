@@ -6,13 +6,6 @@ echo'
   <input type="text" name="test_code" value="" id="label_test">
 </form>';
 
-
-
-
-
-
-
-
 ?>
 <script type="text/javascript">
 //AJAX pour recupérer les données de la base de données budget!!
@@ -34,7 +27,7 @@ function infoBudget(str) {
                 document.getElementById("situationEngagement").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("GET","pageRequete.php?q="+str,true);
+        xmlhttp.open("GET","pageRequete.php?q="+str,true);//
         xmlhttp.send();
     }
 }
